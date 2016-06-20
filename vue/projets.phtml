@@ -1,0 +1,67 @@
+<!-- ********************** VUE INDEX ************************** -->
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <?php require_once('vue/template/head.phtml') ?>
+  <!-- ______________________flex slider__________________ -->
+
+  <link rel="stylesheet" href="vendor/FlexSlider/flexslider.css" type="text/css">
+  <script src="js/slide.js"></script>
+  <script src="vendor/FlexSlider/jquery.flexslider.js"></script>
+
+  <!--_______________________________________________________-->
+
+</head>
+
+<body id="page-projet">
+  <div id="papierPeint"></div>
+  <header>
+
+  </header>
+
+
+  <main>
+
+    <section>
+      <h2 class="titre_section"><?= $vue['h2'] ?></h2>
+      <h3><?= $vue['categorie'] ?></h3><br><br>
+
+      <h4>Statut : </h4>
+        <p><?= $vue['statut'] ?></p>
+        <br>
+
+    </section>
+
+    <section id="slider_projet">
+
+      <!-- ______________________flex slider__________________ */-->
+      <div class="flexslider index-slider">
+        <ul class="slides">
+          <?= $vue['slider']?>
+        </ul>
+      </div>
+      <!-- _______________________________________________________ -->
+    </section>
+
+    <section id="detail-projet">
+      <div>
+        <h4>Descritpion :</h4><br>
+        <p><?= $vue['description'] ?></p><br><br>
+      </div>
+      <div>
+        <h4>Langages / technologies utilisés :</h4><br>
+        <p><?= $vue['techno'] ?></p><br><br>
+      </div>
+    </section>
+    <section id="section-retour">
+      <a href="index.php#ancre-projets" >Retourner aux réalisations</a>
+    </section>
+
+
+  </main>
+
+  <?php require_once('vue/template/footer.phtml') ?>
+
+</body>
+</html>

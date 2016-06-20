@@ -1,0 +1,530 @@
+html{
+text-align: center;
+font-size: 0.625em;
+padding:1em;
+}
+body{
+width:100%;
+}
+img{
+  max-width: 100%;
+}
+a,
+p,
+h1,
+h2,
+h3,
+h4{
+  font-family: 'Montserrat', sans-serif;
+  text-decoration: none;
+  color:black;
+}
+a,
+p{
+  font-size: 1.5em;
+}
+h2{
+  font-size: 1.5em;
+}
+h3{
+  font-size: 2em;
+}
+h4{
+  font-size: 1.5em;
+  font-weight: bold;
+}
+section{
+  margin-top: 7em;
+}
+/********************************************************************************* menu */
+#bouton_menu{
+  position: fixed;
+  top:0;
+  left:0;
+  height:7em;
+  width:100%;
+  background-color: #79cdd1;
+  text-align: center;
+  border: solid black 1px;
+  padding:1em;
+}
+#bouton_menu img{
+  width:50px;
+}
+.cacher,
+.menu{
+  display: none;
+}
+.menu{
+  overflow: hidden;
+  position: fixed;
+  top:7em;
+  background-color: #79cdd1;
+  padding: 5em 0;
+  left:0;
+  border: 1px black solid;
+  border-top: 0;
+  width:100%;
+}
+.menu li{
+  width:50%;
+  float:left;
+  display: block;
+  margin-bottom: 2em;
+}
+.menu li a{
+  padding:3em;
+  width:100%;
+}
+.menu li img{
+  width:50%;
+  display: block;
+  margin: auto;
+}
+.menu li h2{
+  width:100%;
+  font-size: 1em;
+}
+#mini_logo{
+  display: none;
+}
+/************************************ sections */
+
+.titre_section{
+  font-size: 2em;
+  padding:1em;
+  color:white;
+  background-color: #f7941d;
+  -border: 1px black solid;
+  -border-radius: 25px;
+  margin: 1em auto;
+}
+
+/************************************ sections : logo*/
+
+#logo{
+  margin:8em 0;
+}
+/************************************ sections : MOI*/
+.bouton-vlh button,
+.bouton-envoi{
+  background-color: #f7941d;
+  color:white;
+  padding:0.7em;
+  font-weight: bold;
+}
+/************************************ sections : COMPETENCES*/
+
+#ancre-competences h4{
+  margin-bottom:2em;
+}
+#ancre-competences a{
+}
+#ancre-competences a img{
+  width:33%;
+}
+
+/************************************ sections : PROJETS*/
+
+#ancre-projets div{
+  overflow: hidden;
+}
+#ancre-projets a{
+  width:100%;
+  float: left;
+  padding:1em;
+}
+#ancre-projets h3{
+  font-size: 1em;
+  margin-top: 0.5em;
+  line-height: 1.2em;
+}
+#ancre-projets h4{
+  font-size: 0.8em;
+  font-style: italic;
+}
+#ancre-projets img{
+  border:solid black 1px;
+}
+
+/************************************ sections : CONTACT */
+
+#ancre-contact input,
+#ancre-contact textarea{
+  width:70%;
+}
+
+/************************************************************************** PAGE PROJET MOBILE*/
+#page-projet section{
+  margin:0;
+}
+#page-projet h2{
+  margin-top: 0;
+}
+#page-projet h4{
+  padding-top:2em;
+  font-size: 2em;
+  line-height: 1.5em;
+  border-top:solid black 1px;
+}
+#page-projet p{
+  line-height: 1.5em;
+}
+#page-projet #section-retour{
+  padding:3em;
+  margin-bottom: 3em;
+}
+#page-projet #section-retour a{
+  font-size: 2em;
+  text-decoration: underline;
+}
+#page-projet #section-retour a:hover{
+  color:orange;
+}
+/************************************************************************** PAGE MENTIONS LEGALES*/
+
+#mentions_legales{
+  margin: auto;
+  font-size: 1.5em;
+  line-height: 1.9em;
+  text-align: justify;
+}
+#body_mentions{
+  padding:2em;
+}
+#mentions_legales h2{
+  font-size: 2em;
+  background-color:orange;
+  color:white;
+  padding:0.5em;
+  text-align: center;
+}
+#mentions_legales p,
+#mentions_legales a{
+  margin-top: 2em;
+  font-size: 1em;
+  line-height: 1em;
+}
+#mentions_legales span{
+  color:red;
+}
+#mentions_legales b{
+  text-decoration: underline;
+}
+/************************************ footer */
+
+footer{
+  margin-top:2em;
+  padding:1em 0;
+  background-color: #f7941d;
+  color:white;
+}
+footer ul{
+  padding:1em;
+  overflow: hidden;
+  -padding-bottom: 2em;
+  border-bottom: 1px dashed black;
+  margin-bottom: 2em;
+}
+footer li{
+  float:left;
+  width:50%;
+  font-size: 0.5em;
+  margin-bottom: 3em;
+}
+footer p,
+footer a{
+  color : white;
+}
+footer a:hover{
+  color:black;
+}
+
+/**********************************************************************************************/
+/********************************************** paysage  *********************************** */
+/**********************************************************************************************/
+
+@media only screen and (orientation: landscape){
+
+  #logo{
+    width:50%;
+    margin:2em;
+  }
+
+  footer li,
+  .menu li{
+    width:25%;
+  }
+}
+
+/**********************************************************************************************/
+/********************************************** TABLETTE  *********************************** */
+/**********************************************************************************************/
+@media only screen and (orientation: landscape) and (min-width:1024px){
+  html{
+    padding:0;
+  }
+  #ancre-logo{
+    margin-top: 18em;
+    max-height: 570px;
+    margin-bottom: 25em;
+    background-color: transparent;
+  }
+  #mini_logo{
+    -display:block;
+    position:fixed;
+    width:171px;
+    height: 108px;
+    background-color: white;
+    background-image: url(../img/carte de visite.png);
+    border: solid 1px black;
+    border-radius: 2px;
+    top:250px;
+    left:0;
+    background-size: cover;
+    margin-left: 2.5%;
+  }
+
+  h1{
+    position:absolute;
+    width:320px;
+    height: 200px;
+    background-color: white;
+    background-image: url(../img/carte de visite.png);
+    border: solid 1px black;
+    border-radius: 2px;
+    top:20px;
+    left:-400px;
+    background-size: cover;
+
+  }
+  h1 #logo{
+    display: none;
+  }
+  #ancre-logo .accroche{
+    display: none;
+  }
+  #bureau-image{
+    background-image: url(../img/img_titre.JPG);
+    background-size: cover;
+    width: inherit;
+    height: 400px;
+    margin: auto;
+    border:solid 5px rgb(121,205,209);
+    border-bottom-color: orange;
+    border-right-color: orange;
+  }
+  .mobile{
+    display:none;
+  }
+  .menu{
+    display: block;
+    position: absolute;
+    background-color: transparent;
+    border:none;
+    top:0;
+    left:0;
+  }
+  .menu li{
+    float: none;
+  }
+  .menu li a{
+    position: fixed;
+    width:171px;
+    background-color: rgb(121,205,209,0.5);
+    transition: background-color 0.3s;
+    padding: 1em;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    border:solid rgb(211,211,211,0.3) 1px;
+    border-radius: 15px;
+  }
+  .menu li a:hover{
+    background-color: rgb(121,205,209,0.8);
+  }
+  .menu li a h2{
+    font-size: 0.8em;
+    font-weight: bold;
+  }
+  #lien_moi{
+    top:100px;
+    left:0;
+  }
+  #lien_comp{
+    top:100px;
+    right:0;
+    background-color:rgb(247,148,29,0.5);
+  }
+  #lien_proj{
+    top:400px;
+    left:0;
+  }
+  #lien_cont{
+    top:400px;
+    right:0;
+    background-color:rgb(247,148,29,0.5);
+  }
+  #lien_comp:hover,
+  #lien_cont:hover{
+    background-color:rgb(247,148,29,0.8);
+
+  }
+
+
+  main{
+    width:50%;
+    margin:auto;
+  }
+  section{
+    background-color: white;
+  }
+  .titre_section{
+    margin-top: 5em;
+    margin-bottom: 5em;
+  }
+  section p{
+    width:70%;
+    margin:auto;
+  }
+  /*---------------------------------------------------*/
+
+  #ancre-moi {
+    margin-bottom:2em;
+    padding-bottom:  10em;
+
+  }
+  /*---------------------------------------------------*/
+
+  #ancre-competences{
+    padding-bottom:  10em;
+  }
+  #ancre-competences h4{
+    margin-bottom:2em;
+  }
+  #ancre-competences a{
+    width:25%;
+    padding:1em;
+    float: none;
+  }
+  #ancre-competences a img{
+    width:15%;
+  }
+
+  /*---------------------------------------------------*/
+  #ancre-projets{
+    padding-bottom:  10em;
+  }
+  #ancre-projets a{
+    width:50%;
+    transition: background-color 0.5s;
+  }
+
+  #ancre-projets img{
+    height:100px;
+  }
+
+  #ancre-projets a:hover{
+    background-color: rgb(104,175,173,0.5);
+  }
+
+  #ancre-projets h3{
+    font-size: 1.3em;
+    margin-top: 0.5em;
+  }
+  #ancre-projets h4{
+    font-size: 1em;
+    font-style: italic;
+  }
+  /*---------------------------------------------------*/
+  #ancre-contact{
+    padding-bottom:  10em;
+  }
+  #ancre-contact #submit{
+    display: block;
+    width:20%;
+    margin: auto;
+  }
+  /*---------------------------------------------------*/
+  /************************************************************************** PAGE PROJET TABLETTE*/
+  #page-projet{
+    padding-top: 5em;
+  }
+  #page-projet main{
+    background-color: white;
+    width:70%;
+  }
+  #page-projet #slider_projet{
+    width:80%;
+    margin: auto;
+  }
+  #page-projet section{
+    margin:0;
+  }
+  #page-projet #detail-projet{
+    overflow: hidden;
+  }
+  #page-projet #detail-projet div{
+    float:left;
+    width:50%;
+  }
+
+  #page-projet h2{
+    margin-bottom: 1.5em;
+  }
+  #page-projet h4{
+    font-size: 2em;
+    line-height: 1.5em;
+    border-top:solid black 1px;
+  }
+  #page-projet p{
+    line-height: 1.5em;
+  }
+
+
+  /*----------------------------*/
+  #mentions_legales p{
+    text-align: center;
+  }
+
+
+  footer{
+    margin-top: 5em;
+  }
+}
+
+
+/**********************************************************************************************/
+/********************************************** bureau  *********************************** */
+/**********************************************************************************************/
+
+@media only screen and (orientation: landscape) and (min-width:1350px){
+  #bureau-image{
+    height: 600px;
+  }
+  main{
+    width:850px;
+    margin:auto;
+  }
+  .menu li a{
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  #mini_logo{
+    margin-left: 5%;
+  }
+  #papierPeint{
+    background-image: url(../img/papier_peint.JPG);
+    background-size: cover;
+    position: fixed;
+    width:100%;
+    height:200%;
+    z-index: -10;
+    top:-100px;
+  }
+
+  #ancre-projets a{
+    width:25%;
+  }
+
+
+}

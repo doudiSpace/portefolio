@@ -1,0 +1,126 @@
+<!-- ********************** VUE INDEX ************************** -->
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <?php require_once('vue/template/head.phtml') ?>
+  <script type="text/javascript" src ="js/script.js"></script>
+</head>
+<body>
+  <div id="papierPeint"></div>
+  <header>
+    <?php require_once('vue/template/header.phtml') ?>
+  </header>
+
+
+  <main>
+
+    <section id="ancre-logo">
+      <h1><img id="logo" src="img/logo.png" alt="VLH" /></h1>
+      <div id="bureau-image"></div>
+      <h3 class="accroche">- Web developper -</h3><br>
+      <h3 class="accroche">sur Nantes</h3>
+      <a id="mini_logo" class="scroll-haut"></a>
+
+    </section>
+
+    <section id="ancre-moi">
+      <h2 class="titre_section">Vincent LE HENAFF</h2>
+      <p>Je m'appelle Vincent LE HENAFF,</p><br>
+      <p>j'ai commencé le développement web en 2015 après 10 ans dans l'armée de l'air.</p><br>
+      <p>Ma reconversion a débuté par le développement de petits sites/applications perso et c'est rapidement devenu une vraie vocation.</p><br>
+
+      <br>__________________________ <br><br><br>
+
+      <p>J'aime expérimenter, découvrir et apprendre au fur et à mesure de mes projets pros et persos.</p><br>
+
+      <br>__________________________ <br><br><br>
+
+      <p>En plus de mon activité de Freelance sur Nantes, je conçois des jeux de société, des jeux vidéos et je dirige des Formations/cours particuliers dans le domaine du web et de la musique pour débutants (piano &amp; guitare).</p><br>
+
+      <br>__________________________ <br><br><br>
+
+
+      <p>Si mon profil vous intéresse n'hésitez pas à
+        <a class="scroll-ancre bouton-vlh" href="#ancre-contact">
+          <button type="button" name="button">me contacter</button>
+        </a>
+        et regarder
+        <a class="scroll-ancre bouton-vlh" href="#ancre-projets">
+          <button type="button" name="button">mes réalisations</button>
+        </a>
+      </p>
+
+      <br>
+
+      <br>__________________________ <br><br><br>
+
+
+      <a href="img/cv/cv.pdf" target="_blank" class="bouton-vlh"><button type="button" name="button">téléchargez mon CV</button></a>
+
+    </section>
+
+    <section id="ancre-competences">
+      <h2 class="titre_section">Mes compétences</h2>
+      <p>Créatif, rigoureux et à l’écoute de ce qui nous entoure, je dispose des compétences permettant une vraie réactivité pour le développement de vos projets.</p><br><br>
+      <br>__________________________ <br><br><br>
+
+      <p>En veille technologique constante, je suis très sensible à l'ergonomie, pour un web simple, ludique et efficace.</p><br><br>
+      <br>__________________________ <br><br><br>
+
+
+      <h4>Langages Web maîtrisés :</h4><br><br>
+
+      <a href="https://fr.wikipedia.org/wiki/Hypertext_Markup_Language" target="_blank"><img  src="img/comp/html.png" alt="html" /></a>
+      <a href="https://fr.wikipedia.org/wiki/Feuilles_de_style_en_cascade" target="_blank"><img  src="img/comp/css.png" alt="css" /></a>
+      <a href="https://fr.wikipedia.org/wiki/JavaScript" target="_blank"><img  src="img/comp/js.png" alt="js" /></a>
+      <a href="https://fr.wikipedia.org/wiki/JQuery" target="_blank"><img  src="img/comp/jquery.png" alt="jquery" /></a>
+      <a href="https://fr.wikipedia.org/wiki/PHP" target="_blank"><img  src="img/comp/php.png" alt="php" /></a>
+      <a href="https://fr.wikipedia.org/wiki/MySQL" target="_blank"><img  src="img/comp/mysql.png" alt="mysql" /></a>
+
+      <br><br>
+      <h4>Autres technologies utilisées :</h4><br><br>
+
+      <a href="https://fr.wikipedia.org/wiki/Adobe_Photoshop" target="_blank"><img  src="img/comp/photoshop.png" alt="photoshop" /></a>
+      <a href="https://fr.wikipedia.org/wiki/Git" target="_blank"><img  src="img/comp/git.png" alt="git" /></a>
+
+    </section>
+
+    <section id="ancre-projets">
+      <h2 class="titre_section">Mes dernières réalisations</h2>
+      <div>
+
+        <?= $vue['projets'] ?>
+
+
+      </div>
+
+
+
+
+      <!-- <a href="projets.php"><img class="icon" src="img/projets/doudiSpace.jpg" alt="doudi.space" /></a> -->
+
+    </section>
+
+    <section id="ancre-contact">
+      <h2 class="titre_section">Me contacter</h2>
+      <form action="#" method="post">
+
+        <input type="text" id="nom" class="form-case" name="nom" placeholder="Votre nom + prénom" required><br><br>
+
+        <input type="mail" id="email" class="form-case" name="email" placeholder="Votre e-mail" required><br><br>
+
+        <input type="text" id="objet" class="form-case" name="objet" placeholder="Objet du message" required><br><br>
+
+        <textarea name="message" rows="8" placeholder="Votre message..." required></textarea><br><br><br>
+
+        <input id="submit" class="bouton-envoi" type="submit" value="Envoyer">
+      </form>
+    </section>
+
+  </main>
+
+  <?php require_once('vue/template/footer.phtml') ?>
+
+</body>
+</html>

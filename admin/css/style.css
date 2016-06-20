@@ -1,0 +1,73 @@
+html{
+  text-align: center;
+  background-color: lightblue;
+}
+h1{
+  font-size: 4em;
+  text-transform: uppercase;
+}
+h2{
+  font-size: 3em;
+  margin: 1.5em auto;
+}
+h3{
+  font-size: 2em;
+  text-transform: capitalize;
+}
+p,
+a{
+  font-size: 1.5em;
+}
+table{
+  margin:2em auto;
+  background-color: white;
+}
+button{
+  font-size: 0.5em;
+}
+input[type="submit"]{
+  font-size: 1.5em;
+}
+th,
+td{
+  width:auto;
+  border: 1px solid black;
+  padding:1em;
+}
+th{
+  background-color: orange;
+  color:white;
+}
+header a{
+  display: block;
+  text-align: left;
+}
+.attention{
+  color:red;
+}
+.bien{
+  color:green;
+}
+#table-projets .img-mini{
+  width:100px;
+}
+
+#table-img .img-mini{
+  width:200px;
+}
+#formulaire_admin{
+  margin:3em auto;
+  padding:2em;
+  border:solid black 1px;
+  background-color: lightgrey;
+  width:60%;
+}
+#formulaire_admin textarea,
+#formulaire_admin input[type="text"],
+#formulaire_admin label{
+  font-size: 1.5em;
+  width:50%;
+}
+#formulaire_admin option{
+  font-size: 1.5em;
+}

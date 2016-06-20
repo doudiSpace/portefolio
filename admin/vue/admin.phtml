@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>admin</title>
+  <?php require_once('vue/template/head.phtml'); ?>
+</head>
+<body>
+
+  <header>
+    <h1>ADMIN</h1>
+    <a href="../index.php">retour au site</a>
+  </header>
+
+  <main>
+
+    <section>
+      <h2>Mettre à jour mon <a href="modif_cv.php"><button type="button" name="button">CV</button></a></h2>
+    </section>
+
+    <section>
+      <h2>LES CATEGORIES DE PROJETS</h2>
+      <table>
+        <tr>
+          <th><h3>catégories</h3></th>
+        </tr>
+        <?= $vue['categories'] ?>
+        <tr>
+          <th>
+            <form action="ajout_categorie.php" method="post">
+              <input type="submit" value="Ajouter une catégorie">
+            </form>
+          </th>
+
+        </tr>
+      </table>
+    </section>
+
+    <section>
+      <h2>LES PROJETS</h2>
+      <table id="table-projets">
+        <tr>
+          <th><h3>id</h3></th>
+          <th><h3>mini</h3></th>
+          <th><h3>nom</h3></th>
+          <th><h3>catégorie</h3></th>
+          <th><h3>redirection</h3></th>
+          <th colspan="2">
+            <form action="ajout_projet.php" method="post">
+              <input type="submit" value="Ajouter un projet">
+            </form>
+          </th>
+        </tr>
+        <?= $vue['projets'] ?>
+      </table>
+    </section>
+
+
+    <section>
+      <h2>LES IMAGES DES PROJETS</h2>
+      <table id="table-img">
+        <tr>
+          <th><h3>id</h3></th>
+          <th><h3>image</h3></th>
+          <th><h3>nom</h3></th>
+          <th><h3>projet</h3></th>
+
+          <th>
+            <form action="ajout_image.php" method="post">
+              <input type="submit" value="Ajouter une image">
+            </form>
+          </th>
+        </tr>
+        <?= $vue['images'] ?>
+      </table>
+    </section>
+
+  </main>
+
+</body>
+</html>
